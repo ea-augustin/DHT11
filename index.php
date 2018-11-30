@@ -1,3 +1,16 @@
+<?php
+
+$pageTemp = file_get_contents('data.txt');
+
+$tuff = json_decode($pageTemp);
+
+
+
+
+?>
+
+
+
 <html>
  <head>
 
@@ -10,16 +23,9 @@
    <h1>Température</h1>
 
 
- <?php
 
- $pageTemp = file_get_contents('data.txt');
+ <p>Il fait <?php echo $tuff->temperature; ?>° avec <?php echo $tuff->humidite ?>° d'humidité</p>
 
- $tuff = json_decode($pageTemp);
-
-
- ?>
-
- <p>Il fait <?php echo $tuff->temperature; ?>° avec <?php echo $tuff->humidite ?>% d'humidité</p>
 
 
  <div id="thermometer">
