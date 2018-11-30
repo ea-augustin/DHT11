@@ -6,7 +6,7 @@
 
    <h1>Température</h1>
    <p>
-     
+
    </p>
  <?php
 
