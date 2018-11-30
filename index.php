@@ -6,7 +6,7 @@
 
    <h1>Température</h1>
    <p>
-
+ <img src="thermometer.jpg" alt="themo" id="photo" />
    </p>
  <?php
 
