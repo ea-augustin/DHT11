@@ -27,7 +27,7 @@ echo "Last modified: ".date("F d Y H:i:s.",filemtime("index.php"));
 
 
 
- <p>Il fait <?php echo $tuff->temperature; ?>° avec <?php echo $tuff->humidite ?>° d'humidité</p>
+ <p>Il fait <?php echo $tuff->temperature; ?>° avec <?php echo $tuff->humidite ?>% d'humidité</p>
 
 
 
