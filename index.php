@@ -3,8 +3,9 @@
 $pageTemp = file_get_contents('data.txt');
 $tuff = json_decode($pageTemp);
 
-$bargraph_height = 161 + $tuff-> temperature * 4;
-$bargraph_top = 315 - $tuff-> temperature * 4;
+
+$bargraph_height = 161 + $tuff->temperature * 4;
+$bargraph_top = 315 - $tuff->humidite * 4;
 
 echo "<br />";
 echo "Last modified: ".date("F d Y H:i:s.",filemtime("index.php"));
